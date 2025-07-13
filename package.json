@@ -1,0 +1,41 @@
+{
+  "name": "instagram-clone",
+  "version": "1.0.0",
+  "description": "A complete Instagram-like web application with all features",
+  "main": "index.js",
+  "scripts": {
+    "start": "./start.sh",
+    "dev": "./start.sh",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && npm test && cd ../frontend && npm test",
+    "clean": "rm -rf node_modules backend/node_modules frontend/node_modules",
+    "setup": "npm run install-all && cp backend/.env.example backend/.env"
+  },
+  "keywords": [
+    "instagram",
+    "clone",
+    "social-media",
+    "react",
+    "nodejs",
+    "mongodb",
+    "express",
+    "socket.io"
+  ],
+  "author": "Instagram Clone Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/instagram-clone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/instagram-clone/issues"
+  },
+  "homepage": "https://github.com/yourusername/instagram-clone#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
